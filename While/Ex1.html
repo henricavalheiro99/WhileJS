@@ -18,19 +18,23 @@
                 alert("O resultado é: " + resultado)
             }
 
-            if (operacao == 2){
+            else if (operacao == 2){
                 resultado = primeiro_numero - segundo_numero
                 alert("O resultado é: " + resultado)
             }
 
-            if (operacao == 3){
+            else if (operacao == 3){
                 resultado = primeiro_numero * segundo_numero
                 alert("O resultado é: " + resultado)
             }
 
-            if (operacao == 4){
+            else if (operacao == 4){
                 resultado = primeiro_numero / segundo_numero
                 alert("O resultado é: " + resultado)
+            }
+
+            else{
+                alert("Operação inválida")
             }
 
             var validacao = parseInt(prompt("Deseja continuar? \n 1- Sim \n 2- Não"))
