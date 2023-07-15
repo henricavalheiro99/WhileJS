@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+</head>
+<body>
+    <script>
+        while (true){
+            var primeiro_numero = parseFloat(prompt("Digite um número: "))
+            var segundo_numero = parseFloat(prompt("Digite um segundo número"))
+            var operacao = parseInt(prompt("Digite qual operação para fazer \n 1-Soma \n 2- Subtração \n 3- Multiplicação \n 4- Divisão"))
+            var resultado = 0
+
+            if (operacao == 1){
+                resultado = primeiro_numero + segundo_numero
+                alert("O resultado é: " + resultado)
+            }
+
+            if (operacao == 2){
+                resultado = primeiro_numero - segundo_numero
+                alert("O resultado é: " + resultado)
+            }
+
+            if (operacao == 3){
+                resultado = primeiro_numero * segundo_numero
+                alert("O resultado é: " + resultado)
+            }
+
+            if (operacao == 4){
+                resultado = primeiro_numero / segundo_numero
+                alert("O resultado é: " + resultado)
+            }
+
+            var validacao = parseInt(prompt("Deseja continuar? \n 1- Sim \n 2- Não"))
+            
+            if (validacao == 2){
+                break
+            }
+        }
+    </script>
+</body>
+</html>

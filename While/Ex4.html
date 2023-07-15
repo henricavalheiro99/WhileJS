@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex4</title>
+</head>
+<body>
+    <script>
+        while (true){
+            var numero_aleatorio = parseInt(prompt("Escolha um número para o jogo: "))
+            var tentativas = 5
+            while (tentativas > 0){
+                var numero_digitado = parseInt(prompt("Adivinhe o número: "))
+                if (numero_digitado < numero_aleatorio){
+                    alert(numero_digitado + " é menor que o número")
+                }
+                if (numero_digitado > numero_aleatorio){
+                    alert(numero_digitado + " é maior que o número")
+                }
+                if (numero_digitado == numero_aleatorio){
+                    alert("Parabéns, o número era: " + numero_aleatorio)
+                    break
+                }
+                
+                tentativas -= 1
+                alert("Você possui " + tentativas + " tentativas")
+
+                if (tentativas == 0){
+                    alert("Perdeu! O número era: " + numero_aleatorio)
+                }
+            }
+            var validacao = parseInt(prompt("Deseja jogar novamente? \n 1-Sim \n 2-Não"))
+            if (validacao == 2){
+                break
+            }
+        }
+    </script>
+</body>
+</html>
